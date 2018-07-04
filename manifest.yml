@@ -1,0 +1,11 @@
+applications:
+- name: eurekaserviceg
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  path: ./build/libs/EurekaServiceG-0.0.1-SNAPSHOT.jar
+  routes:
+  - route: eurekaserviceg.cfapps.io
+  services:
+  - eureka1
+
